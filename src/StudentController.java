@@ -1,10 +1,7 @@
-public class StudentController{
-    public void controller(){
-        //cambio mi primer hola mundo compartineod con otro programador
-        println("hola mudno")
-        //pipipi
-        println("con fe jhirmar")
-
-        println("con fe")
+public class StudentController {
+    public void controller() {
+        System.out.println("hola mundo");
+        System.out.println("con fe jhirmar");
+        System.out.println("con fe");
     }
 }
