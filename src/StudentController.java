@@ -1,12 +1,31 @@
 public class StudentController {
+    private StudentModel model;
+    private StudentView view;
 
-    public void controller() {
-      
-        System.out.println("Hola mundo");
-        
-        
-        System.out.println("Haciendo cambios en la rama sprint-1");
+    public StudentController(StudentModel model, StudentView view) {
+        this.model = model;
+        this.view = view;
+    }
 
-        System.out.println("probnados cambios en una nueva rama");
+    // Controla actualización de datos
+    public void setStudentName(String name) {
+        model.setName(name);
+    }
+
+    public String getStudentName() {
+        return model.getName();
+    }
+
+    public void setStudentAge(int age) {
+        model.setAge(age);
+    }
+
+    public int getStudentAge() {
+        return model.getAge();
+    }
+
+    // Mostrar datos en la vista
+    public void updateView() {
+        view.printStudentDetails(model.getName(), model.getAge());
     }
 }
